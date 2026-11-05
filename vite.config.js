@@ -9,8 +9,7 @@ export default defineConfig({
     laravel({
       input: [
         'resources/css/app.css',
-        'resources/js/app.js',
-        'resources/js/app.jsx', // entry baru untuk Inertia
+        'resources/js/app.jsx', // ganti dengan app.jsx
       ],
       refresh: true,
     }),
