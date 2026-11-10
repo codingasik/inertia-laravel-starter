@@ -6,6 +6,7 @@ use Inertia\Inertia;
 
 Route::get('/', function () {
   return Inertia::render('Home', [
-    'pesan' => 'Halo dari Laravel lewat Inertia!',
+    'title' => 'Library System',
+    'message' => 'Halo dari Laravel lewat Inertia!',
   ]);
 });

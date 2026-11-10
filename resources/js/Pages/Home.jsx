@@ -1,14 +1,9 @@
-export default function Home({ pesan }) {
+export default function Home({ title, message }) {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
-      <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-        <h1 className="text-3xl font-bold text-gray-800">
-          Halaman Home
-        </h1>
-
-        <p className="mt-4 text-gray-600">
-          Pesan: <span className="font-medium text-blue-600">{pesan}</span>
-        </p>
+    <div className="flex min-h-screen items-center justify-center bg-gray-50 p-6">
+      <div className="max-w-md rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
+        <h1 className="text-2xl font-bold text-slate-800">{title}</h1>
+        <p className="mt-2 text-slate-500">{message}</p>
       </div>
     </div>
   );
