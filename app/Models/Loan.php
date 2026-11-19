@@ -80,7 +80,7 @@ class Loan extends Model
       return ['text' => '—', 'class' => 'text-slate-400'];
     }
 
-    $days = (int) now()->diffInDays($this->due_date);
+    $days = (int) abs(today()->diffInDays($this->due_date));
 
     if ($this->display_status === 'overdue') {
       return [
