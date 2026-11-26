@@ -15,7 +15,7 @@ export default defineConfig({
     }),
     tailwindcss(),
     react(), // entry baru untuk Inertia
-    inertia(), // entry baru untuk Inertia
+    inertia({ssr : false}), // entry baru untuk Inertia
   ],
   server: {
     watch: {
